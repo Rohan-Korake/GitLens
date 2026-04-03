@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background: #0b0f19;
+}
+
+.input-section {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  padding: 1rem;
+}
