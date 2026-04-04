@@ -11,17 +11,119 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <header>
-      <div class="wrapper">
+      <div class="logo-wrapper">
         <div class="logo"><img src="logo.svg" alt="" /></div>
         <div class="name">GitLens</div>
       </div>
     </header>
-    <div class="progress-bar-container"><div class="progress-bar"></div></div>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
     <main>
       <div class="input-section" id="inputSection">
-        <input type="text" />
+        <input type="text" placeholder="Enter GitHub Username" />
+        <button class="fetch-button" id="fetchbutton">Fetch</button>
+      </div>
+      <div class="data-section">
+        <aside class="user-info-section">
+          <div class="profile-pic" id="profilePic">
+            <img
+              src="https://avatars.githubusercontent.com/u/197024045?v=4"
+              alt=""
+            />
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">UserName</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="userName">Rohan-Korake</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Name</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="name">Rohan Korake</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Followers</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="Followers">08</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Following</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="Following">10</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Location</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="location">Sangli, Maharashtra</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Biography</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="bio">
+              Diploma Student in Computer Engineering at L.E.S.P. Sangli |
+              Building Projects | Learning Programming Languages
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">company</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="company">Testing</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Public Repo</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="pubicRepo">21</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Public Gists</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="pubicGists">21</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Blog</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="blog">21</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Type</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="type">User</div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Last Active</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="updatedAt">Time</div>
+          </div>
+        </aside>
+        <div class="user-repo-section"></div>
       </div>
     </main>
 

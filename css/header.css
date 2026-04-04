@@ -18,7 +18,7 @@ header .name {
   width: 2.5rem;
 }
 
-.wrapper {
+.logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,11 +48,11 @@ header .name {
 
 @media (max-width: 500px) {
   .logo img {
-    width: 1.5rem;
+    width: 2rem;
   }
 
   header .name {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 0.4rem;
   }
 }

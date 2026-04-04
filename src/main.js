@@ -1,1 +1,1 @@
-console.log("Hello ");
+import { renderProfile } from " renderProfile.js";
