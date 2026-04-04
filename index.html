@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -27,107 +31,135 @@
         <input type="text" placeholder="Enter GitHub Username" />
         <button class="fetch-button" id="fetchbutton">Fetch</button>
       </div>
-      <div class="data-section">
-        <aside class="user-info-section">
-          <div class="profile-pic" id="profilePic">
-            <img
-              src="https://avatars.githubusercontent.com/u/197024045?v=4"
-              alt=""
-            />
-          </div>
+      <div class="user-info-section">
+        <div class="profile-pic" id="profilePic"></div>
+
+        <div class="user-info">
           <div class="wrapper">
             <div class="container">
               <div class="label">UserName</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="userName">Rohan-Korake</div>
+            <div class="value" id="userName"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Name</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="name">Rohan Korake</div>
+            <div class="value" id="name"></div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">User Id</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="userd"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Followers</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="Followers">08</div>
+            <div class="value" id="Followers"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Following</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="Following">10</div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Location</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="location">Sangli, Maharashtra</div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Biography</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="bio">
-              Diploma Student in Computer Engineering at L.E.S.P. Sangli |
-              Building Projects | Learning Programming Languages
-            </div>
+            <div class="value" id="Following"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">company</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="company">Testing</div>
+            <div class="value" id="company"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Public Repo</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="pubicRepo">21</div>
+            <div class="value" id="pubicRepo"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Public Gists</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="pubicGists">21</div>
+            <div class="value" id="pubicGists"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Blog</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="blog">21</div>
+            <div class="value" id="blog"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Type</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="type">User</div>
+            <div class="value" id="type"></div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Hireable</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="hireable"></div>
           </div>
           <div class="wrapper">
             <div class="container">
               <div class="label">Last Active</div>
               <div class="divider">:</div>
             </div>
-            <div class="value" id="updatedAt">Time</div>
+            <div class="value" id="updatedAt"></div>
           </div>
-        </aside>
-        <div class="user-repo-section"></div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Email Id</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="email"></div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Location</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="location"></div>
+          </div>
+          <div class="wrapper">
+            <div class="container">
+              <div class="label">Biography</div>
+              <div class="divider">:</div>
+            </div>
+            <div class="value" id="bio"></div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/rohan-korake-720848342/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Rohan-Korake" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:rohannkorake@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

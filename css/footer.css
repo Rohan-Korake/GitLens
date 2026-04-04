@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background: #1e2533;
+}
+
+.social-links a {
+  color: #dcdcdc;
+  font-size: 1.5rem;
+  transition:
+    transform 0.2s,
+    color 0.2s;
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+  }
+}
