@@ -14,3 +14,10 @@ A modern web project focused on practicing API request handling, data fetching, 
 - Display profile details including avatar, followers, repositories, and more
 - Structured and clean UI for easy viewing
 - Learn API handling and asynchronous JavaScript
+
+## Tech Stack
+
+- JavaScript
+- HTML
+- CSS
+- API Handling
