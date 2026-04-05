@@ -23,130 +23,30 @@
         <div class="name">GitLens</div>
       </div>
     </header>
+
+    <!-- progress bar  -->
     <div class="progress-bar-container">
       <div class="progress-bar"></div>
     </div>
+
     <main>
+      <!-- user input  -->
       <div class="input-section" id="inputSection">
-        <input type="text" placeholder="Enter GitHub Username" />
+        <input
+          type="text"
+          placeholder="Enter GitHub Username"
+          id="inputUserName"
+        />
         <button class="fetch-button" id="fetchbutton">Fetch</button>
       </div>
-      <div class="user-info-section">
-        <div class="profile-pic" id="profilePic">
-          <img
-            src="https://avatars.githubusercontent.com/u/197024045?v=4"
-            alt=""
-          />
-        </div>
-
-        <div class="user-info">
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">UserName</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="userName"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Name</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="name"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">User Id</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="userd"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Followers</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="Followers"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Following</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="Following"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">company</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="company"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Public Repo</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="pubicRepo"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Public Gists</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="pubicGists"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Blog</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="blog"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Type</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="type"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Hireable</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="hireable"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Last Active</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="updatedAt"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Email Id</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="email"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Location</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="location"></div>
-          </div>
-          <div class="wrapper">
-            <div class="container">
-              <div class="label">Biography</div>
-              <div class="divider">:</div>
-            </div>
-            <div class="value" id="bio"></div>
-          </div>
-        </div>
+      <!-- user information container  -->
+      <div class="user-info-section" id="infoContainer">
+        <div class="profile-pic" id="profilePic"></div>
+        <div class="user-info" id="userInfoContainer"></div>
       </div>
+
+      <!-- working status  -->
+      <div class="working-status" id="workingStatus"></div>
     </main>
 
     <footer>
@@ -166,6 +66,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="src/main.js" type="module"></script>
   </body>
 </html>

@@ -143,6 +143,19 @@ main {
   justify-content: space-between;
 }
 
+#infoContainer {
+  display: none;
+}
+
+.working-status {
+  width: 100%;
+  font-size: 1rem;
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   .input-section input {
     width: 80%;
