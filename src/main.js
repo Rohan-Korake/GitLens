@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchbutton.addEventListener("click", () => {
     const inputUserName = document.getElementById("inputUserName").value;
     const workingStatus = document.getElementById("workingStatus");
+    const progressBar = document.getElementById("progressBar");
 
     if (inputUserName == "") {
       workingStatus.innerText = "Enter GitHub Username ";
@@ -22,17 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     xhr.onreadystatechange = async function () {
       if (xhr.readyState === 1) {
         workingStatus.innerText = "Connecting...";
+        progressBar.style.width = "25%";
       }
       if (xhr.readyState === 2) {
         workingStatus.innerText = "Request sent...";
+        progressBar.style.width = "50%";
       }
       if (xhr.readyState === 3) {
         workingStatus.innerText = "Fetching data...";
+        progressBar.style.width = "75%";
       }
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
+          progressBar.style.width = "100%";
           const data = JSON.parse(this.responseText);
           await sleep(1000);
+          progressBar.style.width = "0%";
           createField();
           renderProfile(data);
         } else {

@@ -1,6 +1,9 @@
 export function createField() {
-  document.getElementById("workingStatus").style.display = "none";
-  document.getElementById("infoContainer").style.display = "flex";
+  const workingStatus = document.getElementById("workingStatus");
+  workingStatus.style.display = "none";
+
+  const infoContainer = document.getElementById("infoContainer");
+  infoContainer.style.display = "flex";
 
   const userFields = [
     { key: "User Id", value: "userId" },
