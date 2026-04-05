@@ -64,7 +64,7 @@ export function toggleBlock(blockName) {
       workingStatus.style.display = "flex";
     });
 
-    workingStatus.style.animation = "showAnimation 1 0.6s ease";
+    workingStatus.style.animation = "showAnimation 1 0.4s ease";
     workingStatus.addEventListener("animationend", () => {
       workingStatus.style.display = "flex";
       infoContainer.style.display = "none";
@@ -73,13 +73,13 @@ export function toggleBlock(blockName) {
   }
 
   if (blockName == "info") {
-    workingStatus.style.animation = "hiddenAnimation 1 0.6s ease";
+    workingStatus.style.animation = "hiddenAnimation 1 0.4s ease";
     workingStatus.addEventListener("animationend", () => {
       workingStatus.style.display = "none";
       infoContainer.style.display = "flex";
     });
 
-    infoContainer.style.animation = "showAnimation 1 0.6s ease";
+    infoContainer.style.animation = "showAnimation 1 0.4s ease";
     infoContainer.addEventListener("animationend", () => {
       infoContainer.style.display = "flex";
       workingStatus.style.display = "none";
