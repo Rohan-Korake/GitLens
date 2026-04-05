@@ -1,10 +1,6 @@
+import { toggleBlock } from "./main.js";
 export function createField() {
-  const workingStatus = document.getElementById("workingStatus");
-  workingStatus.style.display = "none";
-
-  const infoContainer = document.getElementById("infoContainer");
-  infoContainer.style.display = "flex";
-
+  toggleBlock("info");
   const userFields = [
     { key: "User Id", value: "userId" },
     { key: "UserName", value: "userName" },

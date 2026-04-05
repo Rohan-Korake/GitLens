@@ -157,6 +157,24 @@ main {
   align-items: center;
 }
 
+@keyframes hiddenAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1200px) {
   .input-section input {
     width: 80%;
