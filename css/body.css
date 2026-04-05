@@ -129,6 +129,10 @@ main {
   flex-wrap: nowrap;
 }
 
+.user-info {
+  display: flex;
+}
+
 .divider {
   color: #dcdcdcc4;
   margin-right: 0.5rem;
